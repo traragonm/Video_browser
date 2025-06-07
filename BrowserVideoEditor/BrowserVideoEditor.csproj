@@ -103,12 +103,60 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WebUIs\lib\bootstrap\css\.DS_Store" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap.rtl.css.map" />
+    <None Include="WebUIs\lib\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.esm.js.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.esm.min.js.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.js.map" />
+    <None Include="WebUIs\lib\bootstrap\js\bootstrap.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="WebUIs\" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="WebUIs\lib\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="WebUIs\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="WebUIs\lib\jquery\js\jquery-3.7.1.min.js" />
+    <Content Include="WebUIs\lib\video_editor.js" />
+    <Content Include="WebUIs\video_editor.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

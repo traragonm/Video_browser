@@ -21,21 +21,23 @@ namespace BrowserVideoEditor.WebSockets
 
             var urls = CommonFunction.SafeSplitString(request.urls, null);
 
-            if (urls == null)
+            if (urls.Count==0)
             {
                 Send(JsonConvert.SerializeObject(new ResponseModel()
                 {
                     code = (int)Status.INVALIDED,
-                    message = "url bị để trống , vui lòng điền link video!"
+                    message = "url is empty!"
                 }));
+                return;
             }
             if (request.splitDuration == 0)
             {
                 Send(JsonConvert.SerializeObject(new ResponseModel()
                 {
                     code = (int)Status.INVALIDED,
-                    message = "Độ dài video phải lớn hơn 0 (giây)"
+                    message = "extract video duration must be larger than 0 (seconds)"
                 }));
+                return;
             }
 
 

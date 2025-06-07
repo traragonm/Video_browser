@@ -23,7 +23,7 @@ $(function () {
             splitDuration: duration,
             splitSpace: space
         };
-
+        $("#videoUrlTextarea").val('')
         if (socket && socket.readyState === WebSocket.OPEN) {
             socket.send(JSON.stringify(data));
         } else {
@@ -55,6 +55,10 @@ const initSocket = () => {
         let res = JSON.parse(event.data);
 
         switch (res.code) {
+
+            case 0:
+                alert(res.message);
+                break;
             case 1:// in queue
                 addFile(res)
                 break;
@@ -67,6 +71,8 @@ const initSocket = () => {
             case 6://PROCESSED
                 updateProcessFileStatus(res)
                 break;
+
+
         }
 
 
