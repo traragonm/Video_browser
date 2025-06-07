@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/js/jquery-3.7.1.min.js"></script>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container my-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-floating">
+                    <textarea name="videoUrlTextarea" id="videoUrlTextarea" class="form-control"
+                        style="height: 80px;"></textarea>
+                    <label for="videoUrlTextarea">Video links</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+
+
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <div class="form-floating">
+                    <input name="durationField" id="durationField" type="number" class="form-control" value="30">
+                    <label for="durationField">Duration (s)</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-floating">
+                    <input name="spaceField" id="spaceField" type="number" class="form-control" value="0">
+                    <label for="spaceField">Space (s)</label>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-floating">
+                    <input name="savePathField" id="savePathField" type="text" class="form-control">
+                    <label for="savePathField">Save folder</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <button type="button" id="ProcessBtn" class="btn btn-primary">Process</button>
+
+            </div>
+            <!-- <div class="col-md-2">
+                <button type="button" id="UpdateBtn" class="btn btn-primary">Update</button>
+
+            </div> -->
+
+        </div>
+
+        <div id="videoContainer">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Filename</th>
+                        <th scope="col">Path</th>
+
+                        <th scope="col">Extension</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr id="1" class="file-row" data-id="1">
+                        <td>
+                            <div class="file-name">
+                                video.mp4
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-path">
+                                c/:paht/video.mp4
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-extension">
+                                .mp4
+                            </div>
+                        </td>
+                        <td>
+                            <div class="file-status">
+                                <span class="badge bg-primary">in queue</span>
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="lib/video_editor.js"></script>
+
+</body>
+
+</html>
